@@ -1,0 +1,9 @@
+[
+  {
+    "id": 6,
+    "name": "Smartwatch",
+    "category": "Electronics",
+    "price": 150,
+    "available": true
+  }
+]

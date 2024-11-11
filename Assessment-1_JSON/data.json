@@ -1,7 +1,44 @@
 [
-  { "id": 1, "name": "Laptop", "category": "Electronics", "price": 1200, "available": true },
-  { "id": 2, "name": "Phone", "category": "Electronics", "price": 800, "available": false },
-  { "id": 3, "name": "Tablet", "category": "Electronics", "price": 500, "available": true },
-  { "id": 4, "name": "Desk", "category": "Furniture", "price": 200, "available": true },
-  { "id": 5, "name": "Chair", "category": "Furniture", "price": 100, "available": false }
+  {
+    "id": 1,
+    "name": "Laptop",
+    "category": "Electronics",
+    "price": 1200,
+    "available": true
+  },
+  {
+    "id": 2,
+    "name": "Phone",
+    "category": "Electronics",
+    "price": 800,
+    "available": false
+  },
+  {
+    "id": 3,
+    "name": "Tablet",
+    "category": "Electronics",
+    "price": 500,
+    "available": true
+  },
+  {
+    "id": 4,
+    "name": "Desk",
+    "category": "Furniture",
+    "price": 200,
+    "available": true
+  },
+  {
+    "id": 5,
+    "name": "Chair",
+    "category": "Furniture",
+    "price": 100,
+    "available": false
+  },
+  {
+    "id": 6,
+    "name": "Smartwatch",
+    "category": "Electronics",
+    "price": 150,
+    "available": true
+  }
 ]
