@@ -20,50 +20,50 @@ For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
 ------
 
 test> db.customers.insertMany([
-...   {
-...     "name": "John Doe",
-...     "email": "johndoe@gmail.com",
-...     "address": { "street": "123 Main St", "city": "Springfield", "zipcode": "12345" },
-...     "phone": "555-1234",
-...     "registration_date": ISODate("2023-01-01T12:00:00Z")
-...   },
-...   {
-...     "name": "Joana Smith",
-...     "email": "joa@gmail.com",
-...     "address": { "street": "456 Elm St", "city": "Metropolis", "zipcode": "54321" },
-...     "phone": "555-5678",
-...     "registration_date": ISODate("2023-02-15T15:30:00Z")
-...   },
-...   {
-...     "name": "Mike Harbour",
-...     "email": "mikeh@yahoo.com",
-...     "address": { "street": "789 Oak St", "city": "Gotham", "zipcode": "98765" },
-...     "phone": "555-8765",
-...     "registration_date": ISODate("2023-03-10T10:15:00Z")
-...   },
-...   {
-...     "name": "Emma Henry",
-...     "email": "emmahenry@gmail.com",
-...     "address": { "street": "101 Maple St", "city": "Star City", "zipcode": "56789" },
-...     "phone": "555-3456",
-...     "registration_date": ISODate("2023-04-01T08:00:00Z")
-...   },
-...   {
-...     "name": "Lilly Jonas",
-...     "email": "jonaslilly@yahoo.com",
-...     "address": { "street": "202 Pine St", "city": "Central City", "zipcode": "67890" },
-...     "phone": "555-6789",
-...     "registration_date": ISODate("2023-05-20T14:45:00Z")
-...   }
+...    {
+...      "name": "John Doe",
+...      "email": "johndoe@gmail.com",
+...      "address": { "street": "123 Main St", "city": "Springfield", "zipcode": "12345" },
+...      "phone": "555-1234",
+...      "registration_date": ISODate("2023-01-01T12:00:00Z")
+...    },
+...    {
+...      "name": "Mehali Samanta",
+...      "email": "mehalisamanta@gmail.com",
+...      "address": { "street": "369, Kalitala Road", "city": "Kolkata", "zipcode": "700077" },
+...      "phone": "9678451236",
+...      "registration_date": ISODate("2024-02-15T15:30:00Z")
+...    },
+...    {
+...      "name": "Sunny Basu",
+...      "email": "sunny@yahoo.com",
+...      "address": { "street": "069 Cologne", "city": "Frankfurt", "zipcode": "60311" },
+...      "phone": "15251022289",
+...      "registration_date": ISODate("2023-03-10T10:15:00Z")
+...    },
+...    {
+...      "name": "Gourav Kaur",
+...      "email": "gourav.kaur@gmail.com",
+...      "address": { "street": "Jia Sarai", "city": "Delhi", "zipcode": "110012" },
+...      "phone": "6379456123",
+...      "registration_date": ISODate("2024-10-11T08:00:00Z")
+...    },
+...    {
+...      "name": "Priya Kumari",
+...      "email": "kumaripriya@hotmail.com",
+...      "address": { "street": "23, Bandra", "city": "Mumbai", "zipcode": "660339" },
+...      "phone": "7548631296",
+...      "registration_date": ISODate("2023-05-20T14:45:00Z")
+...    }
 ... ]);
 {
   acknowledged: true,
   insertedIds: {
-    '0': ObjectId('67320a8dd58118dbda0d8190'),
-    '1': ObjectId('67320a8dd58118dbda0d8191'),
-    '2': ObjectId('67320a8dd58118dbda0d8192'),
-    '3': ObjectId('67320a8dd58118dbda0d8193'),
-    '4': ObjectId('67320a8dd58118dbda0d8194')
+    '0': ObjectId('67339435b30d3633ee0d8190'),
+    '1': ObjectId('67339435b30d3633ee0d8191'),
+    '2': ObjectId('67339435b30d3633ee0d8192'),
+    '3': ObjectId('67339435b30d3633ee0d8193'),
+    '4': ObjectId('67339435b30d3633ee0d8194')
   }
 }
 test> show collections
@@ -73,7 +73,7 @@ customers
 test> db.customers.find();
 [
   {
-    _id: ObjectId('67320a8dd58118dbda0d8190'),
+    _id: ObjectId('67339435b30d3633ee0d8190'),
     name: 'John Doe',
     email: 'johndoe@gmail.com',
     address: { street: '123 Main St', city: 'Springfield', zipcode: '12345' },
@@ -81,35 +81,39 @@ test> db.customers.find();
     registration_date: ISODate('2023-01-01T12:00:00.000Z')
   },
   {
-    _id: ObjectId('67320a8dd58118dbda0d8191'),
-    name: 'Joana Smith',
-    email: 'joa@gmail.com',
-    address: { street: '456 Elm St', city: 'Metropolis', zipcode: '54321' },
-    phone: '555-5678',
-    registration_date: ISODate('2023-02-15T15:30:00.000Z')
+    _id: ObjectId('67339435b30d3633ee0d8191'),
+    name: 'Mehali Samanta',
+    email: 'mehalisamanta@gmail.com',
+    address: {
+      street: '369, Kalitala Road',
+      city: 'Kolkata',
+      zipcode: '700077'
+    },
+    phone: '9678451236',
+    registration_date: ISODate('2024-02-15T15:30:00.000Z')
   },
   {
-    _id: ObjectId('67320a8dd58118dbda0d8192'),
-    name: 'Mike Harbour',
-    email: 'mikeh@yahoo.com',
-    address: { street: '789 Oak St', city: 'Gotham', zipcode: '98765' },
-    phone: '555-8765',
+    _id: ObjectId('67339435b30d3633ee0d8192'),
+    name: 'Sunny Basu',
+    email: 'sunny@yahoo.com',
+    address: { street: '069 Cologne', city: 'Frankfurt', zipcode: '60311' },
+    phone: '15251022289',
     registration_date: ISODate('2023-03-10T10:15:00.000Z')
   },
   {
-    _id: ObjectId('67320a8dd58118dbda0d8193'),
-    name: 'Emma Henry',
-    email: 'emmahenry@gmail.com',
-    address: { street: '101 Maple St', city: 'Star City', zipcode: '56789' },
-    phone: '555-3456',
-    registration_date: ISODate('2023-04-01T08:00:00.000Z')
+    _id: ObjectId('67339435b30d3633ee0d8193'),
+    name: 'Gourav Kaur',
+    email: 'gourav.kaur@gmail.com',
+    address: { street: 'Jia Sarai', city: 'Delhi', zipcode: '110012' },
+    phone: '6379456123',
+    registration_date: ISODate('2024-10-11T08:00:00.000Z')
   },
   {
-    _id: ObjectId('67320a8dd58118dbda0d8194'),
-    name: 'Lilly Jonas',
-    email: 'jonaslilly@yahoo.com',
-    address: { street: '202 Pine St', city: 'Central City', zipcode: '67890' },
-    phone: '555-6789',
+    _id: ObjectId('67339435b30d3633ee0d8194'),
+    name: 'Priya Kumari',
+    email: 'kumaripriya@hotmail.com',
+    address: { street: '23, Bandra', city: 'Mumbai', zipcode: '660339' },
+    phone: '7548631296',
     registration_date: ISODate('2023-05-20T14:45:00.000Z')
   }
 ]
@@ -117,70 +121,71 @@ test> const customerMap = {};
 
 test> db.customers.find().forEach(customer => {
 ...   customerMap[customer.name] = customer._id;
+... });
 test> db.orders.insertMany([
-...   {
-...     "order_id": "ORD123456",
-...     "customer_id": customerMap["John Doe"],
-...     "order_date": ISODate("2023-05-15T14:00:00Z"),
-...     "status": "shipped",
-...     "items": [
-...       { "product_name": "Laptop", "quantity": 1, "price": 1500 },
-...       { "product_name": "Mouse", "quantity": 2, "price": 25 }
-...     ],
-...     "total_value": 1550
-...   },
-...   {
-...     "order_id": "ORD123457",
-...     "customer_id": customerMap["Joana Smith"],
-...     "order_date": ISODate("2023-05-20T16:30:00Z"),
-...     "status": "processing",
-...     "items": [
-...       { "product_name": "Smartphone", "quantity": 1, "price": 800 },
-...       { "product_name": "Headphones", "quantity": 1, "price": 100 }
-...     ],
-...     "total_value": 900
-...   },
 ...    {
-...     "order_id": "ORD123458",
-...     "customer_id": customerMap["Mike Harbour"],
-...     "order_date": ISODate("2023-05-22T09:45:00Z"),
-...     "status": "shipped",
-...     "items": [
-...       { "product_name": "Tablet", "quantity": 1, "price": 300 },
-...       { "product_name": "Stylus", "quantity": 1, "price": 50 }
-...     ],
-...     "total_value": 350
-...   },
-...   {
-...     "order_id": "ORD123459",
-...     "customer_id": customerMap["Emma Henry"],
-...     "order_date": ISODate("2023-06-01T11:00:00Z"),
-...     "status": "delivered",
-...     "items": [
-...       { "product_name": "Camera", "quantity": 1, "price": 1200 }
-...     ],
-...     "total_value": 1200
-...   },
-...   {
-...     "order_id": "ORD123460",
-...     "customer_id": customerMap["Lilly Jonas"],
-...     "order_date": ISODate("2023-06-15T13:20:00Z"),
-...     "status": "processing",
-...     "items": [
-...       { "product_name": "Monitor", "quantity": 1, "price": 400 },
-...       { "product_name": "Keyboard", "quantity": 1, "price": 50 }
-...     ],
-...     "total_value": 450
-...   }
-... ]);
+...      "order_id": "ORD123456",
+...      "customer_id": customerMap["John Doe"],
+...      "order_date": ISODate("2023-05-15T14:00:00Z"),
+...      "status": "shipped",
+...      "items": [
+...        { "product_name": "Laptop", "quantity": 1, "price": 1500 },
+...        { "product_name": "Mouse", "quantity": 2, "price": 25 }
+...      ],
+...      "total_value": 1550
+...    },
+...    {
+...      "order_id": "ORD123457",
+...      "customer_id": customerMap["Mehali Samanta"],
+...      "order_date": ISODate("2023-05-20T16:30:00Z"),
+...      "status": "processing",
+...      "items": [
+...        { "product_name": "Smartphone", "quantity": 1, "price": 800 },
+...        { "product_name": "Headphones", "quantity": 1, "price": 100 }
+...      ],
+...      "total_value": 900
+...    },
+...     {
+...      "order_id": "ORD123458",
+...      "customer_id": customerMap["Sunny Basu"],
+...      "order_date": ISODate("2023-05-22T09:45:00Z"),
+...      "status": "shipped",
+...      "items": [
+...        { "product_name": "Tablet", "quantity": 1, "price": 300 },
+...        { "product_name": "Stylus", "quantity": 1, "price": 50 }
+...      ],
+...      "total_value": 350
+...    },
+...    {
+...      "order_id": "ORD123459",
+...      "customer_id": customerMap["Gourav Kaur"],
+...      "order_date": ISODate("2024-10-15T11:00:00Z"),
+...      "status": "delivered",
+...      "items": [
+...        { "product_name": "Camera", "quantity": 1, "price": 1200 }
+...      ],
+...      "total_value": 1200
+...    },
+...    {
+...      "order_id": "ORD123460",
+...      "customer_id": customerMap["Priya Kumari"],
+...      "order_date": ISODate("2023-06-15T13:20:00Z"),
+...      "status": "processing",
+...      "items": [
+...        { "product_name": "Monitor", "quantity": 1, "price": 400 },
+...        { "product_name": "Keyboard", "quantity": 1, "price": 50 }
+...      ],
+...      "total_value": 450
+...    }
+...  ]);
 {
   acknowledged: true,
   insertedIds: {
-    '0': ObjectId('67323620d58118dbda0d819a'),
-    '1': ObjectId('67323620d58118dbda0d819b'),
-    '2': ObjectId('67323620d58118dbda0d819c'),
-    '3': ObjectId('67323620d58118dbda0d819d'),
-    '4': ObjectId('67323620d58118dbda0d819e')
+    '0': ObjectId('673397cdb30d3633ee0d8195'),
+    '1': ObjectId('673397cdb30d3633ee0d8196'),
+    '2': ObjectId('673397cdb30d3633ee0d8197'),
+    '3': ObjectId('673397cdb30d3633ee0d8198'),
+    '4': ObjectId('673397cdb30d3633ee0d8199')
   }
 }
 test> show collections
@@ -195,9 +200,9 @@ orders
 test> db.orders.find();
 [
   {
-    _id: ObjectId('67323620d58118dbda0d819a'),
+    _id: ObjectId('673397cdb30d3633ee0d8195'),
     order_id: 'ORD123456',
-    customer_id: ObjectId('67320a8dd58118dbda0d8190'),
+    customer_id: ObjectId('67339435b30d3633ee0d8190'),
     order_date: ISODate('2023-05-15T14:00:00.000Z'),
     status: 'shipped',
     items: [
@@ -207,9 +212,9 @@ test> db.orders.find();
     total_value: 1550
   },
   {
-    _id: ObjectId('67323620d58118dbda0d819b'),
+    _id: ObjectId('673397cdb30d3633ee0d8196'),
     order_id: 'ORD123457',
-    customer_id: ObjectId('67320a8dd58118dbda0d8191'),
+    customer_id: ObjectId('67339435b30d3633ee0d8191'),
     order_date: ISODate('2023-05-20T16:30:00.000Z'),
     status: 'processing',
     items: [
@@ -219,9 +224,9 @@ test> db.orders.find();
     total_value: 900
   },
   {
-    _id: ObjectId('67323620d58118dbda0d819c'),
+    _id: ObjectId('673397cdb30d3633ee0d8197'),
     order_id: 'ORD123458',
-    customer_id: ObjectId('67320a8dd58118dbda0d8192'),
+    customer_id: ObjectId('67339435b30d3633ee0d8192'),
     order_date: ISODate('2023-05-22T09:45:00.000Z'),
     status: 'shipped',
     items: [
@@ -231,18 +236,18 @@ test> db.orders.find();
     total_value: 350
   },
   {
-    _id: ObjectId('67323620d58118dbda0d819d'),
+    _id: ObjectId('673397cdb30d3633ee0d8198'),
     order_id: 'ORD123459',
-    customer_id: ObjectId('67320a8dd58118dbda0d8193'),
-    order_date: ISODate('2023-06-01T11:00:00.000Z'),
+    customer_id: ObjectId('67339435b30d3633ee0d8193'),
+    order_date: ISODate('2024-10-15T11:00:00.000Z'),
     status: 'delivered',
     items: [ { product_name: 'Camera', quantity: 1, price: 1200 } ],
     total_value: 1200
   },
   {
-    _id: ObjectId('67323620d58118dbda0d819e'),
+    _id: ObjectId('673397cdb30d3633ee0d8199'),
     order_id: 'ORD123460',
-    customer_id: ObjectId('67320a8dd58118dbda0d8194'),
+    customer_id: ObjectId('67339435b30d3633ee0d8194'),
     order_date: ISODate('2023-06-15T13:20:00.000Z'),
     status: 'processing',
     items: [
@@ -263,9 +268,9 @@ test> const customer = db.customers.findOne({ "name": "John Doe" });
 test> db.orders.find({ "customer_id": customer._id });
 [
   {
-    _id: ObjectId('67323620d58118dbda0d819a'),
+    _id: ObjectId('673397cdb30d3633ee0d8195'),
     order_id: 'ORD123456',
-    customer_id: ObjectId('67320a8dd58118dbda0d8190'),
+    customer_id: ObjectId('67339435b30d3633ee0d8190'),
     order_date: ISODate('2023-05-15T14:00:00.000Z'),
     status: 'shipped',
     items: [
@@ -284,11 +289,11 @@ test> const order = db.orders.findOne({ "order_id": "ORD123458" });
 
 test> db.customers.findOne({ "_id": order.customer_id });
 {
-  _id: ObjectId('67320a8dd58118dbda0d8192'),
-  name: 'Mike Harbour',
-  email: 'mikeh@yahoo.com',
-  address: { street: '789 Oak St', city: 'Gotham', zipcode: '98765' },
-  phone: '555-8765',
+  _id: ObjectId('67339435b30d3633ee0d8192'),
+  name: 'Sunny Basu',
+  email: 'sunny@yahoo.com',
+  address: { street: '069 Cologne', city: 'Frankfurt', zipcode: '60311' },
+  phone: '15251022289',
   registration_date: ISODate('2023-03-10T10:15:00.000Z')
 }
 
@@ -296,14 +301,14 @@ test> db.customers.findOne({ "_id": order.customer_id });
 o	Write a script to update the status of an order to “delivered” where the order_id is “ORD123456”.
 
 test> db.orders.updateOne(
-...   { "order_id": "ORD123456" },
-...   { $set: { "status": "delivered" } }
-... );
+...    { "order_id": "ORD123456" },
+...    { $set: { "status": "delivered" } }
+...  );
 {
   acknowledged: true,
   insertedId: null,
   matchedCount: 1,
-  modifiedCount: 0,
+  modifiedCount: 1,
   upsertedCount: 0
 }
 
@@ -311,7 +316,6 @@ test> db.orders.updateOne(
 o	Write a script to delete an order where the order_id is “ORD123456”.
 
 test> db.orders.deleteOne({ "order_id": "ORD123457" });
-test>
 { acknowledged: true, deletedCount: 1 }
 
 
@@ -321,41 +325,41 @@ test>
 //1.	Calculate Total Value of All Orders by Customer:
 o	Write a script to calculate the total value of all orders for each customer. This should return each customer’s name and the total order value.
 
-test> db.orders.aggregate([
-...   { $group: { "_id": "$customer_id", "totalSpent": { $sum: "$total_value" } } },
-...   { $lookup: { from: "customers", localField: "_id", foreignField: "_id", as: "customer_info" } },
-...   { $unwind: "$customer_info" },
-...   { $project: { "customer_name": "$customer_info.name", "totalSpent": 1 } }
-... ]);
+test> test> db.orders.aggregate([
+...    { $group: { "_id": "$customer_id", "totalSpent": { $sum: "$total_value" } } },
+...    { $lookup: { from: "customers", localField: "_id", foreignField: "_id", as: "customer_info" } },
+...    { $unwind: "$customer_info" },
+...    { $project: { "customer_name": "$customer_info.name", "totalSpent": 1 } }
+...  ]);
 [
   {
-    _id: ObjectId('67320a8dd58118dbda0d8192'),
+    _id: ObjectId('67339435b30d3633ee0d8192'),
     totalSpent: 350,
-    customer_name: 'Mike Harbour'
+    customer_name: 'Sunny Basu'
   },
   {
-    _id: ObjectId('67320a8dd58118dbda0d8194'),
-    totalSpent: 450,
-    customer_name: 'Lilly Jonas'
+    _id: ObjectId('67339435b30d3633ee0d8193'),
+    totalSpent: 1200,
+    customer_name: 'Gourav Kaur'
   },
   {
-    _id: ObjectId('67320a8dd58118dbda0d8190'),
+    _id: ObjectId('67339435b30d3633ee0d8190'),
     totalSpent: 1550,
     customer_name: 'John Doe'
   },
   {
-    _id: ObjectId('67320a8dd58118dbda0d8193'),
-    totalSpent: 1200,
-    customer_name: 'Emma Henry'
+    _id: ObjectId('67339435b30d3633ee0d8194'),
+    totalSpent: 450,
+    customer_name: 'Priya Kumari'
   }
 ]
 
 //2.	Group Orders by Status:
 o	Write a script to group orders by their status (e.g., “shipped”, “delivered”, etc.) and count how many orders are in each status.
 
-test> db.orders.aggregate([
-...   { $group: { "_id": "$status", "count": { $sum: 1 } } }
-... ]);
+test> test> db.orders.aggregate([
+...    { $group: { "_id": "$status", "count": { $sum: 1 } } }
+...  ]);
 [
   { _id: 'processing', count: 1 },
   { _id: 'shipped', count: 1 },
@@ -367,65 +371,65 @@ test> db.orders.aggregate([
 o	Write a script to find each customer and their most recent order. Include customer information such as name, email, and order details (e.g., order_id, total_value).
 
 test> db.orders.aggregate([
-...   { $sort: { "order_date": -1 } },
-...   { $group: { "_id": "$customer_id", "latestOrder": { $first: "$$ROOT" } } },
-...   { $lookup: { from: "customers", localField: "_id", foreignField: "_id", as: "customer_info" } },
-...   { $unwind: "$customer_info" },
-...   { $project: { "customer_info.name": 1, "customer_info.email": 1, "latestOrder.order_id": 1, "latestOrder.total_value": 1 } }
-... ]);
+...    { $sort: { "order_date": -1 } },
+...    { $group: { "_id": "$customer_id", "latestOrder": { $first: "$$ROOT" } } },
+...    { $lookup: { from: "customers", localField: "_id", foreignField: "_id", as: "customer_info" } },
+...    { $unwind: "$customer_info" },
+...    { $project: { "customer_info.name": 1, "customer_info.email": 1, "latestOrder.order_id": 1, "latestOrder.total_value": 1 } }
+...  ]);
 [
   {
-    _id: ObjectId('67320a8dd58118dbda0d8193'),
+    _id: ObjectId('67339435b30d3633ee0d8193'),
     latestOrder: { order_id: 'ORD123459', total_value: 1200 },
-    customer_info: { name: 'Emma Henry', email: 'emmahenry@gmail.com' }
+    customer_info: { name: 'Gourav Kaur', email: 'gourav.kaur@gmail.com' }
   },
   {
-    _id: ObjectId('67320a8dd58118dbda0d8190'),
+    _id: ObjectId('67339435b30d3633ee0d8194'),
+    latestOrder: { order_id: 'ORD123460', total_value: 450 },
+    customer_info: { name: 'Priya Kumari', email: 'kumaripriya@hotmail.com' }
+  },
+  {
+    _id: ObjectId('67339435b30d3633ee0d8192'),
+    latestOrder: { order_id: 'ORD123458', total_value: 350 },
+    customer_info: { name: 'Sunny Basu', email: 'sunny@yahoo.com' }
+  },
+  {
+    _id: ObjectId('67339435b30d3633ee0d8190'),
     latestOrder: { order_id: 'ORD123456', total_value: 1550 },
     customer_info: { name: 'John Doe', email: 'johndoe@gmail.com' }
-  },
-  {
-    _id: ObjectId('67320a8dd58118dbda0d8194'),
-    latestOrder: { order_id: 'ORD123460', total_value: 450 },
-    customer_info: { name: 'Lilly Jonas', email: 'jonaslilly@yahoo.com' }
-  },
-  {
-    _id: ObjectId('67320a8dd58118dbda0d8192'),
-    latestOrder: { order_id: 'ORD123458', total_value: 350 },
-    customer_info: { name: 'Mike Harbour', email: 'mikeh@yahoo.com' }
   }
 ]
 
 //4.	Find the Most Expensive Order by Customer:
 o	Write a script to find the most expensive order for each customer. Return the customer’s name and the details of their most expensive order (e.g., order_id, total_value).
 
-test> db.orders.aggregate([
-...   { $sort: { "total_value": -1 } },
-...   { $group: { "_id": "$customer_id", "mostExpensiveOrder": { $first: "$$ROOT" } } },
-...   { $lookup: { from: "customers", localField: "_id", foreignField: "_id", as: "customer_info" } },
-...   { $unwind: "$customer_info" },
-...   { $project: { "customer_info.name": 1, "mostExpensiveOrder.order_id": 1, "mostExpensiveOrder.total_value": 1 } }
-... ]);
+test>  db.orders.aggregate([
+...    { $sort: { "total_value": -1 } },
+...    { $group: { "_id": "$customer_id", "mostExpensiveOrder": { $first: "$$ROOT" } } },
+...    { $lookup: { from: "customers", localField: "_id", foreignField: "_id", as: "customer_info" } },
+...    { $unwind: "$customer_info" },
+...    { $project: { "customer_info.name": 1, "mostExpensiveOrder.order_id": 1, "mostExpensiveOrder.total_value": 1 } }
+...  ]);
 [
   {
-    _id: ObjectId('67320a8dd58118dbda0d8193'),
-    mostExpensiveOrder: { order_id: 'ORD123459', total_value: 1200 },
-    customer_info: { name: 'Emma Henry' }
+    _id: ObjectId('67339435b30d3633ee0d8194'),
+    mostExpensiveOrder: { order_id: 'ORD123460', total_value: 450 },
+    customer_info: { name: 'Priya Kumari' }
   },
   {
-    _id: ObjectId('67320a8dd58118dbda0d8190'),
+    _id: ObjectId('67339435b30d3633ee0d8190'),
     mostExpensiveOrder: { order_id: 'ORD123456', total_value: 1550 },
     customer_info: { name: 'John Doe' }
   },
   {
-    _id: ObjectId('67320a8dd58118dbda0d8192'),
-    mostExpensiveOrder: { order_id: 'ORD123458', total_value: 350 },
-    customer_info: { name: 'Mike Harbour' }
+    _id: ObjectId('67339435b30d3633ee0d8193'),
+    mostExpensiveOrder: { order_id: 'ORD123459', total_value: 1200 },
+    customer_info: { name: 'Gourav Kaur' }
   },
   {
-    _id: ObjectId('67320a8dd58118dbda0d8194'),
-    mostExpensiveOrder: { order_id: 'ORD123460', total_value: 450 },
-    customer_info: { name: 'Lilly Jonas' }
+    _id: ObjectId('67339435b30d3633ee0d8192'),
+    mostExpensiveOrder: { order_id: 'ORD123458', total_value: 350 },
+    customer_info: { name: 'Sunny Basu' }
   }
 ]
 
@@ -441,12 +445,19 @@ test> db.orders.aggregate([
 o	Write a script to find all customers who have placed at least one order in the last 30 days. Return the customer name, email, and the order date for their most recent order.
 
 test> db.orders.aggregate([
-...   { $match: { "order_date": { $gte: new Date(new Date() - 30 * 24 * 60 * 60 * 1000) } } },
-...   { $group: { "_id": "$customer_id", "latestOrderDate": { $max: "$order_date" } } },
-...   { $lookup: { from: "customers", localField: "_id", foreignField: "_id", as: "customer_info" } },
-...   { $unwind: "$customer_info" },
-...   { $project: { "customer_info.name": 1, "customer_info.email": 1, "latestOrderDate": 1 } }
-... ]);
+...    { $match: { "order_date": { $gte: new Date(new Date() - 30 * 24 * 60 * 60 * 1000) } } },
+...    { $group: { "_id": "$customer_id", "latestOrderDate": { $max: "$order_date" } } },
+...    { $lookup: { from: "customers", localField: "_id", foreignField: "_id", as: "customer_info" } },
+...    { $unwind: "$customer_info" },
+...    { $project: { "customer_info.name": 1, "customer_info.email": 1, "latestOrderDate": 1 } }
+...  ]);
+[
+  {
+    _id: ObjectId('67339435b30d3633ee0d8193'),
+    latestOrderDate: ISODate('2024-10-15T11:00:00.000Z'),
+    customer_info: { name: 'Gourav Kaur', email: 'gourav.kaur@gmail.com' }
+  }
+]
 
 //2.	Find All Products Ordered by a Specific Customer:
 o	Write a script to find all distinct products ordered by a customer with the name “John Doe”. Include the product name and the total quantity ordered.
@@ -454,63 +465,63 @@ o	Write a script to find all distinct products ordered by a customer with the na
 test> const customer = db.customers.findOne({ "name": "John Doe" });
 
 test> db.orders.aggregate([
-...   { $match: { "customer_id": customer._id } },
-...   { $unwind: "$items" },
-...   { $group: { "_id": "$items.product_name", "totalQuantity": { $sum: "$items.quantity" } } }
-... ]);
+...    { $match: { "customer_id": customer._id } },
+...    { $unwind: "$items" },
+...    { $group: { "_id": "$items.product_name", "totalQuantity": { $sum: "$items.quantity" } } }
+...  ]);
 [
-  { _id: 'Laptop', totalQuantity: 1 },
-  { _id: 'Mouse', totalQuantity: 2 }
+  { _id: 'Mouse', totalQuantity: 2 },
+  { _id: 'Laptop', totalQuantity: 1 }
 ]
 
 //3.	Find the Top 3 Customers with the Most Expensive Total Orders:
 o	Write a script to find the top 3 customers who have spent the most on orders. Sort the results by total order value in descending order.
 
 test> db.orders.aggregate([
-...   { $group: { "_id": "$customer_id", "totalSpent": { $sum: "$total_value" } } },
-...   { $sort: { "totalSpent": -1 } },
-...   { $limit: 3 },
-...   { $lookup: { from: "customers", localField: "_id", foreignField: "_id", as: "customer_info" } },
-...   { $unwind: "$customer_info" },
-...   { $project: { "customer_info.name": 1, "totalSpent": 1 } }
-... ]);
+...    { $group: { "_id": "$customer_id", "totalSpent": { $sum: "$total_value" } } },
+...    { $sort: { "totalSpent": -1 } },
+...    { $limit: 3 },
+...    { $lookup: { from: "customers", localField: "_id", foreignField: "_id", as: "customer_info" } },
+...    { $unwind: "$customer_info" },
+...    { $project: { "customer_info.name": 1, "totalSpent": 1 } }
+...  ]);
 [
   {
-    _id: ObjectId('67320a8dd58118dbda0d8190'),
+    _id: ObjectId('67339435b30d3633ee0d8190'),
     totalSpent: 1550,
     customer_info: { name: 'John Doe' }
   },
   {
-    _id: ObjectId('67320a8dd58118dbda0d8193'),
+    _id: ObjectId('67339435b30d3633ee0d8193'),
     totalSpent: 1200,
-    customer_info: { name: 'Emma Henry' }
+    customer_info: { name: 'Gourav Kaur' }
   },
   {
-    _id: ObjectId('67320a8dd58118dbda0d8194'),
+    _id: ObjectId('67339435b30d3633ee0d8194'),
     totalSpent: 450,
-    customer_info: { name: 'Lilly Jonas' }
+    customer_info: { name: 'Priya Kumari' }
   }
 ]
 
 //4.	Add a New Order for an Existing Customer:
 o	Write a script to add a new order for a customer with the name “Jane Smith”. The order should include at least two items, such as “Smartphone” and “Headphones”.
 
-test> const customer = db.customers.findOne({ "name": "Joana Smith" });
+test> const customer = db.customers.findOne({ "name": "Mehali Samanta" });
 
 test> db.orders.insertOne({
-...   "order_id": "ORD123461",
-...   "customer_id": customer._id,
-...   "order_date": new Date(),
-...   "status": "processing",
-...   "items": [
-...     { "product_name": "Smartphone", "quantity": 1, "price": 800 },
-...     { "product_name": "Headphones", "quantity": 1, "price": 100 }
-...   ],
-...   "total_value": 900
-... });
+...    "order_id": "ORD123461",
+...    "customer_id": customer._id,
+...    "order_date": new Date(),
+...    "status": "processing",
+...    "items": [
+...      { "product_name": "Smartphone", "quantity": 1, "price": 800 },
+...      { "product_name": "Headphones", "quantity": 1, "price": 100 }
+...    ],
+...    "total_value": 900
+...  });
 {
   acknowledged: true,
-  insertedId: ObjectId('67326776c8ff7a13020d8190')
+  insertedId: ObjectId('67339bf2b30d3633ee0d819a')
 }
 
 ***************Part 4: Bonus Challenge**************
@@ -523,64 +534,64 @@ test> db.orders.insertOne({
 o	Write a script to find all customers who have not placed any orders. Return the customer’s name and email.
 
 test> db.customers.aggregate([
-...   { $lookup: { from: "orders", localField: "_id", foreignField: "customer_id", as: "orders" } },
-...   { $match: { "orders": { $size: 0 } } },
-...   { $project: { "name": 1, "email": 1 } }
-... ]);
+...    { $lookup: { from: "orders", localField: "_id", foreignField: "customer_id", as: "orders" } },
+...    { $match: { "orders": { $size: 0 } } },
+...    { $project: { "name": 1, "email": 1 } }
+...  ]);
 
 //2.	Calculate the Average Number of Items Ordered per Order:
 o	Write a script to calculate the average number of items ordered per order across all orders. The result should return the average number of items.
 
 test> db.orders.aggregate([
-...   { $unwind: "$items" },
-...   { $group: { "_id": "$_id", "totalItems": { $sum: "$items.quantity" } } },
-...   { $group: { "_id": null, "avgItemsPerOrder": { $avg: "$totalItems" } } },
-...   { $project: { "avgItemsPerOrder": 1 } }
-... ]);
+...    { $unwind: "$items" },
+...    { $group: { "_id": "$_id", "totalItems": { $sum: "$items.quantity" } } },
+...    { $group: { "_id": null, "avgItemsPerOrder": { $avg: "$totalItems" } } },
+...    { $project: { "avgItemsPerOrder": 1 } }
+...  ]);
 [ { _id: null, avgItemsPerOrder: 2 } ]
 
 //3.	Join Customer and Order Data Using $lookup:
 o	Write a script using the $lookup aggregation operator to join data from the customers collection and the orders collection. Return customer name, email, order details (order_id, total_value), and order date.
 
 test> db.orders.aggregate([
-...   { $lookup: { from: "customers", localField: "customer_id", foreignField: "_id", as: "customer_info" } },
-...   { $unwind: "$customer_info" },
-...   { $project: { "customer_info.name": 1, "customer_info.email": 1, "order_id": 1, "total_value": 1, "order_date": 1 } }
-... ]);
+...    { $lookup: { from: "customers", localField: "customer_id", foreignField: "_id", as: "customer_info" } },
+...    { $unwind: "$customer_info" },
+...    { $project: { "customer_info.name": 1, "customer_info.email": 1, "order_id": 1, "total_value": 1, "order_date": 1 } }
+...  ]);
 [
   {
-    _id: ObjectId('67323620d58118dbda0d819a'),
+    _id: ObjectId('673397cdb30d3633ee0d8195'),
     order_id: 'ORD123456',
     order_date: ISODate('2023-05-15T14:00:00.000Z'),
     total_value: 1550,
     customer_info: { name: 'John Doe', email: 'johndoe@gmail.com' }
   },
   {
-    _id: ObjectId('67323620d58118dbda0d819c'),
+    _id: ObjectId('673397cdb30d3633ee0d8197'),
     order_id: 'ORD123458',
     order_date: ISODate('2023-05-22T09:45:00.000Z'),
     total_value: 350,
-    customer_info: { name: 'Mike Harbour', email: 'mikeh@yahoo.com' }
+    customer_info: { name: 'Sunny Basu', email: 'sunny@yahoo.com' }
   },
   {
-    _id: ObjectId('67323620d58118dbda0d819d'),
+    _id: ObjectId('673397cdb30d3633ee0d8198'),
     order_id: 'ORD123459',
-    order_date: ISODate('2023-06-01T11:00:00.000Z'),
+    order_date: ISODate('2024-10-15T11:00:00.000Z'),
     total_value: 1200,
-    customer_info: { name: 'Emma Henry', email: 'emmahenry@gmail.com' }
+    customer_info: { name: 'Gourav Kaur', email: 'gourav.kaur@gmail.com' }
   },
   {
-    _id: ObjectId('67323620d58118dbda0d819e'),
+    _id: ObjectId('673397cdb30d3633ee0d8199'),
     order_id: 'ORD123460',
     order_date: ISODate('2023-06-15T13:20:00.000Z'),
     total_value: 450,
-    customer_info: { name: 'Lilly Jonas', email: 'jonaslilly@yahoo.com' }
+    customer_info: { name: 'Priya Kumari', email: 'kumaripriya@hotmail.com' }
   },
   {
-    _id: ObjectId('67326776c8ff7a13020d8190'),
+    _id: ObjectId('67339bf2b30d3633ee0d819a'),
     order_id: 'ORD123461',
-    order_date: ISODate('2024-11-11T20:22:14.683Z'),
+    order_date: ISODate('2024-11-12T18:18:26.684Z'),
     total_value: 900,
-    customer_info: { name: 'Joana Smith', email: 'joa@gmail.com' }
+    customer_info: { name: 'Mehali Samanta', email: 'mehalisamanta@gmail.com' }
   }
 ]
